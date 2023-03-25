@@ -1,11 +1,15 @@
-import Header from '../components/Header.js'
-import HomeBanner from '../components/HomeBanner.js'
+import Header from '../components/Header'
+import HomeBanner from '../components/HomeBanner'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div className="container font-primary">
-      <Header />
-      <HomeBanner />
+    <div className="font-primary">
+      <div className="container">
+        <Header />
+        <HomeBanner />
+      </div>
+      <Footer />
     </div>
   )
 }
