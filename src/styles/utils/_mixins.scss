@@ -1,0 +1,11 @@
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin no-decoration {
+  border-style: none;
+  list-style: none;
+  text-decoration: none;
+}
