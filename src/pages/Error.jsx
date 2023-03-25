@@ -1,7 +1,9 @@
+import Header from '../components/Header'
 function Error() {
   return (
     <div>
-      <h1>Page 404</h1>
+      <div className="error font-primary container">
+        <Header />
     </div>
   )
 }
