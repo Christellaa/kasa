@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 63px;
+}
+
+nav {
+  display: flex;
+  gap: 57px;
+}
+
+.links {
+  color: $color-secondary;
+}
