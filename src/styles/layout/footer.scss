@@ -1,0 +1,18 @@
+footer {
+  background-color: $bg-footer;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  img {
+    width: 122px;
+    margin-top: 70px;
+  }
+
+  h3 {
+    color: $color-primary;
+  }
+}
