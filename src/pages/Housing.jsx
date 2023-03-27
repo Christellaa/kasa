@@ -40,13 +40,15 @@ function Housings() {
             host={host}
             rating={rating}
           />
-          <Collapse title="Description" text={description} />
-          <Collapse
-            title="Équipements"
-            text={equipments.map((equipment) => (
-              <li>{equipment}</li>
-            ))}
-          />
+          <div className="housing__collapse">
+            <Collapse title="Description" text={description} />
+            <Collapse
+              title="Équipements"
+              text={equipments.map((equipment) => (
+                <li>{equipment}</li>
+              ))}
+            />
+          </div>
         </main>
       </div>
       <Footer />
