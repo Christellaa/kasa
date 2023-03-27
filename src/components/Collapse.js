@@ -7,6 +7,10 @@ function Collapse({ title, text }) {
   }
 
   return (
+    <div className="collapse-space">
+      <div className="collapse" onClick={Toggle}>
+        <h2 className="font-primary">{title}</h2>
+        <div className="chevrons">
           {!isOpen ? (
             //show chevron-down when not opened, otherwise show chevron-up
             <i class="fa-solid fa-chevron-down"></i>
