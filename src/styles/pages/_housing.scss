@@ -1,0 +1,56 @@
+.housing__desc {
+  color: $color-secondary;
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.housing__tags {
+  color: $color-primary;
+  @include no-decoration;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .housing__tag {
+    background-color: $bg-primary;
+    padding: 5px 40px;
+    border-radius: 10px;
+  }
+}
+
+.housing__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.housing__host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 24px;
+  width: 80%;
+
+  p {
+    color: $color-secondary;
+  }
+
+  img {
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+}
