@@ -1,0 +1,31 @@
+.carrousel {
+  position: relative;
+}
+
+.carrousel__slide {
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.carrousel__arrows {
+  width: 100%;
+  position: absolute;
+  font-size: 75px;
+  top: 40%;
+  color: $color-primary;
+
+  .carrousel__arrow-left,
+  .carrousel__arrow-right {
+    position: absolute;
+    cursor: pointer;
+  }
+  .carrousel__arrow-left {
+    left: 23px;
+  }
+
+  .carrousel__arrow-right {
+    right: 23px;
+  }
+}
