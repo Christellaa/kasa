@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import housings from '../data/housings.json'
 import Error from './Error'
 import Header from '../components/Header'
+import Carrousel from '../components/Carrousel'
 import Housing from '../components/Housing'
 import Collapse from '../components/Collapse'
 import Footer from '../components/Footer'
@@ -30,6 +31,7 @@ function Housings() {
       <div className="container">
         <Header />
         <main>
+          <Carrousel pictures={pictures} />
           <Housing
             id={id}
             title={title}
