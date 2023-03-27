@@ -13,15 +13,17 @@ function Housings() {
     return <Error />
   }
 
-  const id = housing.id
-  const title = housing.title
-  //const pictures = housing.pictures
-  //const description = housing.description
-  const host = housing.host
-  const rating = housing.rating
-  const location = housing.location
-  //const equipments = housing.equipments
-  const tags = housing.tags
+  const {
+    id,
+    pictures,
+    title,
+    location,
+    tags,
+    host,
+    rating,
+    description,
+    equipments,
+  } = housing
 
   return (
     <div className="font-primary">
