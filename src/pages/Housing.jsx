@@ -3,6 +3,7 @@ import housings from '../data/housings.json'
 import Error from './Error'
 import Header from '../components/Header'
 import Housing from '../components/Housing'
+import Collapse from '../components/Collapse'
 import Footer from '../components/Footer'
 
 function Housings() {
@@ -34,6 +35,13 @@ function Housings() {
             tags={tags}
             host={host}
             rating={rating}
+          />
+          <Collapse title="Description" text={description} />
+          <Collapse
+            title="Équipements"
+            text={equipments.map((equipment) => (
+              <li>{equipment}</li>
+            ))}
           />
         </main>
       </div>
