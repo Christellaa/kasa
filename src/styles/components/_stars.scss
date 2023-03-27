@@ -1,3 +1,10 @@
+.stars {
+  display: flex;
+  margin-top: 24px;
+  font-size: 30px;
+  gap: 10px;
+}
+
 .fullStar {
   color: $color-secondary;
 }
