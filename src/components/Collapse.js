@@ -1,21 +1,21 @@
 import { useState } from 'react'
 
 function Collapse({ title, text }) {
-  const [open, setOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   function Toggle() {
-    setOpen(!open)
+    setIsOpen(!isOpen)
   }
 
   return (
-    <div>
-      <div onClick={Toggle}>
-        <h2>{title}</h2>
-        <div>
-          <i class="fa-solid fa-chevron-down"></i>
-          <i class="fa-solid fa-chevron-up"></i>
+          {!isOpen ? (
+            //show chevron-down when not opened, otherwise show chevron-up
+            <i class="fa-solid fa-chevron-down"></i>
+          ) : (
+            <i class="fa-solid fa-chevron-up"></i>
+          )}
         </div>
       </div>
-      {open && <p>{text}</p>}
+      {isOpen && <p className="collapse-content size-primary">{text}</p>}
     </div>
   )
 }
