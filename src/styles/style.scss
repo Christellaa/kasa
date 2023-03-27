@@ -4,6 +4,10 @@
 @import 'base/sizes';
 @import 'base/typography';
 
+@import 'components/carrousel';
+@import 'components/collapse';
+@import 'components/stars';
+
 @import 'layout/header';
 @import 'layout/banner';
 @import 'layout/cards';
@@ -11,4 +15,3 @@
 
 @import 'pages/all';
 @import 'pages/error';
-@import 'pages/housing';
