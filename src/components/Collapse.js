@@ -9,10 +9,13 @@ function Collapse({ title, text }) {
   return (
     <div>
       <div onClick={Toggle}>
-        <i class="fa-solid fa-chevron-down"></i>
-        <i class="fa-solid fa-chevron-up"></i>
+        <h2>{title}</h2>
+        <div>
+          <i class="fa-solid fa-chevron-down"></i>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
       </div>
-      {open && <h1>{title}</h1> && <p>{text}</p>}
+      {open && <p>{text}</p>}
     </div>
   )
 }
