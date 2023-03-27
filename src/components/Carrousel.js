@@ -16,14 +16,24 @@ function Carrousel({ pictures }) {
   }
 
   return (
-    <div>
+    <div className="carrousel">
       <div>
-        <img src={pictures[currentSlide]} alt="Photographie du logement" />
+        <img
+          className="carrousel__slide"
+          src={pictures[currentSlide]}
+          alt="Photographie du logement"
+        />
       </div>
       {picturesLength > 1 && (
-        <div>
-          <i onClick={previousSlide} class="fa-solid fa-chevron-left"></i>
-          <i onClick={nextSlide} class="fa-solid fa-chevron-right"></i>
+        <div className="carrousel__arrows">
+          <i
+            onClick={previousSlide}
+            class="carrousel__arrow-left fa-solid fa-chevron-left"
+          ></i>
+          <i
+            onClick={nextSlide}
+            class="carrousel__arrow-right fa-solid fa-chevron-right"
+          ></i>
         </div>
       )}
     </div>
