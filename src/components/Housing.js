@@ -1,4 +1,6 @@
 function Housing({ title, location, tags, host, rating }) {
+  const stars = [1, 2, 3, 4, 5]
+
   return (
     <div>
       <div>
@@ -13,7 +15,15 @@ function Housing({ title, location, tags, host, rating }) {
       <div>
         <p>{host.name}</p>
         <img src={host.picture} alt={host.name} />
-        <p>stars</p>
+        <div>
+          {stars.map((star) =>
+            rating >= star ? (
+              <i class="fullStar fa-solid fa-star"></i>
+            ) : (
+              <i class="emptyStar fa-solid fa-star"></i>
+            )
+          )}
+        </div>
       </div>
     </div>
   )
