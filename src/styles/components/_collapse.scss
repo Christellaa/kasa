@@ -1,0 +1,45 @@
+.collapse-column {
+  margin: 40px 210px;
+}
+
+.collapse-space {
+  margin-top: 24px;
+  flex: 1;
+}
+
+.housing__collapse {
+  display: flex;
+  flex-direction: row;
+  gap: 76px;
+  flex-wrap: wrap;
+}
+
+.collapse {
+  background-color: $bg-primary;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.collapse h2,
+.chevrons {
+  color: $color-primary;
+}
+
+.chevrons {
+  font-size: 25px;
+}
+
+.collapse-content {
+  background-color: $bg-secondary;
+  color: $color-secondary;
+  margin-top: 0;
+  padding: 40px 20px 30px 20px;
+  @include no-decoration;
+  height: 50%;
+  border-radius: 5px;
+}
