@@ -28,11 +28,11 @@ function Carrousel({ pictures }) {
         <div className="carrousel__arrows">
           <i
             onClick={previousSlide}
-            class="carrousel__arrow-left fa-solid fa-chevron-left"
+            className="carrousel__arrow-left fa-solid fa-chevron-left"
           ></i>
           <i
             onClick={nextSlide}
-            class="carrousel__arrow-right fa-solid fa-chevron-right"
+            className="carrousel__arrow-right fa-solid fa-chevron-right"
           ></i>
         </div>
       )}

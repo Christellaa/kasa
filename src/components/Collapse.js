@@ -13,9 +13,9 @@ function Collapse({ title, text }) {
         <div className="chevrons">
           {!isOpen ? (
             //show chevron-down when not opened, otherwise show chevron-up
-            <i class="fa-solid fa-chevron-down"></i>
+            <i className="fa-solid fa-chevron-down"></i>
           ) : (
-            <i class="fa-solid fa-chevron-up"></i>
+            <i className="fa-solid fa-chevron-up"></i>
           )}
         </div>
       </div>
