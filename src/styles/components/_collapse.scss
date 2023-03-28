@@ -1,5 +1,9 @@
 .collapse-column {
   margin: 40px 210px;
+
+  @include mobile {
+    margin: 20px;
+  }
 }
 
 .collapse-space {
