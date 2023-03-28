@@ -9,9 +9,7 @@ function Error() {
         <Header />
         <div className="error__content">
           <h1>404</h1>
-          <p className="size-primary">
-            Oups! La page que vous demandez n'existe pas.
-          </p>
+          <p>Oups! La page que vous demandez n'existe pas.</p>
           <Link to="/" className="links link__back-home">
             Retourner sur la page d’accueil
           </Link>
