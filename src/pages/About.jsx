@@ -12,8 +12,8 @@ function About() {
         <AboutBanner />
       </div>
       <main className="collapse-column">
-        {about.map((content) => (
-          <Collapse title={content.title} text={content.text} />
+        {about.map((content, id) => (
+          <Collapse key={id} title={content.title} text={content.text} />
         ))}
       </main>
       <Footer />

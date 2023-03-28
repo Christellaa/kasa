@@ -44,8 +44,8 @@ function Housings() {
             <Collapse title="Description" text={description} />
             <Collapse
               title="Équipements"
-              text={equipments.map((equipment) => (
-                <li>{equipment}</li>
+              text={equipments.map((equipment, id) => (
+                <li key={id}>{equipment}</li>
               ))}
             />
           </div>
