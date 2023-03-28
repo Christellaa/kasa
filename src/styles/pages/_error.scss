@@ -9,13 +9,27 @@
   align-items: center;
   margin: 174px 0 160px 0;
 
+  @include mobile {
+    margin: 200px 57px 235px 57px;
+  }
+
   h1 {
     font-size: 288px;
     margin-block: 0;
     margin-bottom: 25px;
     font-weight: 700;
+
+    @include mobile {
+      font-size: 96px;
+    }
   }
+
   p {
     margin-bottom: 144px;
+    text-align: center;
   }
+}
+
+.link__back-home {
+  font-size: 14px;
 }
