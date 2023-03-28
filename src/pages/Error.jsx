@@ -12,11 +12,11 @@ function Error() {
           <p className="size-primary">
             Oups! La page que vous demandez n'existe pas.
           </p>
-          <Link to="/" className="links ">
+          <Link to="/" className="links link__back-home">
             Retourner sur la page d’accueil
           </Link>
         </div>
-      </div>{' '}
+      </div>
       <Footer />
     </div>
   )
