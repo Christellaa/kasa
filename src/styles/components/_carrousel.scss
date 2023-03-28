@@ -9,12 +9,15 @@
   border-radius: 25px;
 }
 
-.carrousel__arrows {
-  width: 100%;
-  position: absolute;
-  font-size: 75px;
-  top: 40%;
+.carrousel__extra {
   color: $color-primary;
+}
+
+.carrousel__arrows {
+  font-size: 75px;
+  position: absolute;
+  width: 100%;
+  top: 40%;
 
   .carrousel__arrow-left,
   .carrousel__arrow-right {
@@ -28,4 +31,11 @@
   .carrousel__arrow-right {
     right: 23px;
   }
+}
+
+.counter {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 25px;
 }
