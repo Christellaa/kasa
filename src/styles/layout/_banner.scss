@@ -16,4 +16,8 @@
   border-radius: 25px;
   height: 223px;
   filter: brightness(70%);
+  font-size: 48px;
+  @include mobile {
+    font-size: 24px;
+  }
 }

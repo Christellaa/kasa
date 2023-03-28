@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 
 function About() {
   return (
-    <div className="font-primary">
+    <div>
       <div className="container">
         <Header />
         <AboutBanner />

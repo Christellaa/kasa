@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <header>
-      <img src={logo} alt="Logo de Kasa" className="logo--size" />
-      <nav className="size-secondary">
+      <img src={logo} alt="Logo de Kasa" className="logo" />
+      <nav className="size-primary">
         <Link to="/" className="links">
           Accueil
         </Link>

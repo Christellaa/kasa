@@ -36,7 +36,7 @@ function Carrousel({ pictures }) {
               className="carrousel__arrow-right fa-solid fa-chevron-right"
             ></i>
           </div>
-          <span className="counter size-primary">
+          <span className="counter">
             {`${currentSlide + 1} / ${picturesLength}`}
           </span>
         </div>

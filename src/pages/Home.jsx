@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div className="font-primary">
+    <div>
       <div className="container">
         <Header />
         <HomeBanner />

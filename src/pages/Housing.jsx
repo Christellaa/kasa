@@ -27,7 +27,7 @@ function Housings() {
   } = housing
 
   return (
-    <div className="font-primary">
+    <div>
       <div className="container">
         <Header />
         <main>

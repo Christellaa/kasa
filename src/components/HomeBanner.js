@@ -4,7 +4,7 @@ function HomeBanner() {
   return (
     <div className="banner">
       <img src={homeBanner} alt="Bannière" className="banner__img" />
-      <h1 className="font-primary">Chez vous, partout et ailleurs</h1>
+      <h1>Chez vous, partout et ailleurs</h1>
     </div>
   )
 }
