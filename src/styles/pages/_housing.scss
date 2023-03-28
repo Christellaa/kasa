@@ -1,24 +1,44 @@
+.housing__info {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
 .housing__desc {
   color: $color-secondary;
 
   h3 {
     margin-top: 30px;
     margin-bottom: 0;
+    font-size: 36px;
+
+    @include mobile {
+      margin-top: 15px;
+      font-size: 18px;
+    }
   }
 
   p {
     margin-top: 10px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 }
 
 .housing__tags {
   color: $color-primary;
-  @include no-decoration;
   padding-left: 0px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   font-size: 14px;
+  @include no-decoration;
+
   @include mobile {
     font-size: 10px;
   }
@@ -27,18 +47,23 @@
     background-color: $bg-primary;
     padding: 5px 40px;
     border-radius: 10px;
-  }
-}
 
-.housing__info {
-  display: flex;
-  justify-content: space-between;
+    @include mobile {
+      padding: 3px 30px;
+    }
+  }
 }
 
 .housing__host {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @include mobile {
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .flex-row {
@@ -49,12 +74,25 @@
   margin-top: 24px;
   width: 80%;
 
+  @include mobile {
+    margin-top: 6px;
+  }
+
   p {
     color: $color-secondary;
+
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   img {
     border-radius: 50%;
     margin-left: 10px;
+    width: 64px;
+
+    @include mobile {
+      width: 32px;
+    }
   }
 }

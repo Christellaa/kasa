@@ -1,5 +1,6 @@
 .carrousel {
   position: relative;
+  margin-top: 20px;
 }
 
 .carrousel__slide {
@@ -7,6 +8,11 @@
   width: 100%;
   object-fit: cover;
   border-radius: 25px;
+
+  @include mobile {
+    height: 255px;
+    border-radius: 10px;
+  }
 }
 
 .carrousel__extra {
@@ -19,6 +25,11 @@
   width: 100%;
   top: 40%;
 
+  @include mobile {
+    font-size: 20px;
+    top: 45%;
+  }
+
   .carrousel__arrow-left,
   .carrousel__arrow-right {
     position: absolute;
@@ -26,16 +37,29 @@
   }
   .carrousel__arrow-left {
     left: 23px;
+
+    @include mobile {
+      left: 6px;
+    }
   }
 
   .carrousel__arrow-right {
     right: 23px;
+
+    @include mobile {
+      right: 6px;
+    }
   }
 }
 
 .counter {
   position: absolute;
   width: 100%;
-  left: 50%;
+  text-align: center;
   bottom: 25px;
+
+  @include mobile {
+    font-size: 14px;
+    bottom: 10px;
+  }
 }
