@@ -7,6 +7,20 @@
   h1 {
     position: absolute;
     color: $color-primary;
+    font-size: 48px;
+    padding: 10px;
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  br {
+    display: none;
+
+    @include mobile {
+      display: initial;
+    }
   }
 }
 
@@ -16,8 +30,9 @@
   border-radius: 25px;
   height: 223px;
   filter: brightness(70%);
-  font-size: 48px;
+
   @include mobile {
-    font-size: 24px;
+    height: 111px;
+    border-radius: 10px;
   }
 }

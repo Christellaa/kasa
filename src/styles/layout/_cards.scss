@@ -9,9 +9,19 @@
   padding: 60px 50px;
   margin: 43px 0 43px 0;
 
+  @include mobile {
+    padding: 0;
+    display: initial;
+  }
+
   article {
     max-width: 340px;
     position: relative;
+
+    @include mobile {
+      max-width: 100%;
+      margin-top: 22px;
+    }
   }
 
   img {
@@ -19,6 +29,10 @@
     height: 340px;
     border-radius: 10px;
     object-fit: cover;
+
+    @include mobile {
+      max-height: 255px;
+    }
   }
 
   h3 {
