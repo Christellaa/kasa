@@ -25,15 +25,20 @@ function Carrousel({ pictures }) {
         />
       </div>
       {picturesLength > 1 && (
-        <div className="carrousel__arrows">
-          <i
-            onClick={previousSlide}
-            className="carrousel__arrow-left fa-solid fa-chevron-left"
-          ></i>
-          <i
-            onClick={nextSlide}
-            className="carrousel__arrow-right fa-solid fa-chevron-right"
-          ></i>
+        <div className="carrousel__extra">
+          <div className="carrousel__arrows">
+            <i
+              onClick={previousSlide}
+              className="carrousel__arrow-left fa-solid fa-chevron-left"
+            ></i>
+            <i
+              onClick={nextSlide}
+              className="carrousel__arrow-right fa-solid fa-chevron-right"
+            ></i>
+          </div>
+          <span className="counter size-primary">
+            {`${currentSlide + 1} / ${picturesLength}`}
+          </span>
         </div>
       )}
     </div>
