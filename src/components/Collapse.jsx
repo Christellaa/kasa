@@ -11,12 +11,11 @@ function Collapse({ title, text }) {
       <div className="collapse" onClick={Toggle}>
         <h2>{title}</h2>
         <div className="chevrons">
-          {!isOpen ? (
-            //show chevron-down when not opened, otherwise show chevron-up
-            <i className="fa-solid fa-chevron-down"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-up"></i>
-          )}
+          <i
+            className={`${
+              !isOpen ? 'fa-solid fa-chevron-down' : 'fa-solid fa-chevron-up'
+            }`}
+          ></i>
         </div>
       </div>
       {isOpen && <p className="collapse-content">{text}</p>}
