@@ -1,5 +1,6 @@
 import Header from '../components/Header'
-import HomeBanner from '../components/HomeBanner'
+import Banner from '../components/Banner'
+import homeBanner from '../assets/homeBanner.png'
 import Cards from '../components/Cards'
 import Footer from '../components/Footer'
 
@@ -8,7 +9,7 @@ function Home() {
     <div>
       <div className="container">
         <Header />
-        <HomeBanner />
+        <Banner img={homeBanner} text={'Chez vous, partout et ailleurs'} />
         <main>
           <Cards />
         </main>
