@@ -37,7 +37,7 @@ function Carrousel({ pictures }) {
             ></i>
           </div>
           <span className="counter">
-            {`${currentSlide + 1} / ${picturesLength}`}
+            {currentSlide + 1} / {picturesLength}
           </span>
         </div>
       )}
