@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import housings from '../data/housings.json'
+import housingData from '../data/housingData.json'
 import Error from './Error'
 import Header from '../components/Header'
 import Carrousel from '../components/Carrousel'
@@ -9,7 +9,7 @@ import Footer from '../components/Footer'
 
 function Housings() {
   const params = useParams()
-  const housing = housings.find((housing) => housing.id === params.id)
+  const housing = housingData.find((housing) => housing.id === params.id)
   if (housing === undefined) {
     return <Error />
   }

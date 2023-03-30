@@ -1,10 +1,10 @@
-import housings from '../data/housings.json'
+import housingData from '../data/housingData.json'
 import { Link } from 'react-router-dom'
 
 function Cards() {
   return (
     <div className="gallery">
-      {housings.map(({ id, title, cover }) => (
+      {housingData.map(({ id, title, cover }) => (
         <Link key={id} to={`/housing/${id}`}>
           <article>
             <img src={cover} alt={title} />
