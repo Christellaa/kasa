@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import aboutBanner from '../assets/aboutBanner.png'
-import about from '../data/about.json'
+import aboutData from '../data/aboutData.json'
 import Collapse from '../components/Collapse'
 import Footer from '../components/Footer'
 
@@ -13,7 +13,7 @@ function About() {
         <Banner img={aboutBanner} />
       </div>
       <main className="collapse-column">
-        {about.map((content, id) => (
+        {aboutData.map((content, id) => (
           <Collapse key={id} title={content.title} text={content.text} />
         ))}
       </main>
