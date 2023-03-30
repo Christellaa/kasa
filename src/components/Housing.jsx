@@ -1,17 +1,14 @@
-function Housing({ title, location, tags, host, rating }) {
-  const stars = [1, 2, 3, 4, 5]
+import TagsList from './TagsList'
+import StarsList from './StarsList'
 
+function Housing({ title, location, tags, host, rating }) {
   return (
     <div className="housing__info">
       <div className="housing__desc">
         <h3>{title}</h3>
         <p>{location}</p>
         <ul className="housing__tags tag--size">
-          {tags.map((tag, id) => (
-            <li key={id} className="housing__tag">
-              {tag}
-            </li>
-          ))}
+          <TagsList tags={tags} />
         </ul>
       </div>
       <div className="housing__host">
@@ -20,13 +17,7 @@ function Housing({ title, location, tags, host, rating }) {
           <img src={host.picture} alt={host.name} />
         </div>
         <div className="stars">
-          {stars.map((star, id) =>
-            rating >= star ? (
-              <i key={id} className="fullStar fa-solid fa-star"></i>
-            ) : (
-              <i key={id} className="emptyStar fa-solid fa-star"></i>
-            )
-          )}
+          <StarsList rating={rating} />
         </div>
       </div>
     </div>
