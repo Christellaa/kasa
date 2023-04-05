@@ -1,5 +1,5 @@
-function StarsList({ className }) {
+function StarsListItem({ className }) {
   return <i className={className}></i>
 }
 
-export default StarsList
+export default StarsListItem
