@@ -1,10 +1,17 @@
 import { useState } from 'react'
+import CurrentLocation from './CurrentLocation'
 
 function Collapse({ title, text }) {
   const [isOpen, setIsOpen] = useState(false)
   function Toggle() {
     setIsOpen(!isOpen)
   }
+
+  const collapseClass = CurrentLocation(
+    '/about',
+    'collapse-content about_collapse',
+    'collapse-content'
+  )
 
   return (
     <div className="collapse-space">
@@ -18,7 +25,7 @@ function Collapse({ title, text }) {
           ></i>
         </div>
       </div>
-      {isOpen && <p className="collapse-content">{text}</p>}
+      {isOpen && <p className={collapseClass}>{text}</p>}
     </div>
   )
 }
